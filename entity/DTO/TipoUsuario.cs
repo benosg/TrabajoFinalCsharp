@@ -9,6 +9,6 @@ namespace entity
     public class TipoUsuario
     {
         public int idTipo { get; set; }
-        public string NombreTipo { get; set; }
+        public string nombreTipo { get; set; }
     }
 }

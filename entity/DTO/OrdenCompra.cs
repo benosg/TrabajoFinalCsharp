@@ -6,26 +6,24 @@ using System.Threading.Tasks;
 
 namespace entity
 {
-   public class Factura
+    public class OrdenCompra
     {
-        public int numFactura { get; set; }
-        public string  rutCliente { get; set; }
+        public int numOrden { get; set; }
+        public string rutCliente { get; set; }
         public string razonSocial { get; set; }
+        public string direccion { get; set; }
         public DateTime fecha { get; set; }
-        public int iva { get; set; }
-        public int neto { get; set; }
         public int total { get; set; }
-
         public int codProducto { get; set; }
         public int cantidad { get; set; }
         public int subTotal { get; set; }
+        public int usuario { get; set; }
 
-        public List<DetalleFactura> lstFactura { get; set; }
-
+        public List<DetalleOrden> lstOrdenCompra { get; set; }
     }
-    public class DetalleFactura
+    public class DetalleOrden
     {
-        public int codProducto { get; set; }
+        public int idProducto { get; set; }
         public int cantidad { get; set; }
         public int subTotal { get; set; }
     }

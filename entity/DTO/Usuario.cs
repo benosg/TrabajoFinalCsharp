@@ -12,8 +12,7 @@ namespace entity
         public string login { get; set; }
         public string  nombre { get; set; }
         public string apellido { get; set; }
-        public int sistema { get; set; }
-        public List <TipoUsuario> tipoUsuario{ get; set; }
+        public int tipoUsuario{ get; set; }
         public List<Usuario> lstUsuario{ get; set; }
 }
 }

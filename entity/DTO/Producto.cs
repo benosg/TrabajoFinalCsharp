@@ -8,8 +8,9 @@ namespace entity
 {
     public class Producto
     {
-        public int codProducto { get; set; }
+        public int idProducto { get; set; }
         public string nombreProducto { get; set; }
         public int precio { get; set; }
+        public List<Producto> lstProducto { get; set; }
     }
 }
